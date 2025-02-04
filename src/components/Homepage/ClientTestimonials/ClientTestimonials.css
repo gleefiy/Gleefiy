@@ -1,7 +1,7 @@
-/* ClientTestimonials.css */
+
 .client-testimonials {
     padding: 80px 0;
-    background-color: #f8f9fa; /* Light background */
+    background-color: #f8f9fa; 
   }
   
   .container {
@@ -18,9 +18,8 @@
     font-weight: 600;
   }
   
-  /* Slick Carousel Styles (customize as needed) */
   .testimonial-slide {
-    padding: 20px; /* Add some padding around the slide content */
+    padding: 20px; 
   }
   
   .testimonial-card {
@@ -29,11 +28,11 @@
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    min-height: 250px; /* Ensure a minimum height for consistent display */
+    min-height: 250px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center; 
+    justify-content: center; 
   }
   
   
@@ -47,9 +46,9 @@
   
   .testimonial-author {
     display: flex;
-    align-items: center; /* Align image and details */
-    justify-content: center; /* Center horizontally */
-    margin-top: auto; /* Push author details to the bottom */
+    align-items: center; 
+    justify-content: center; 
+    margin-top: auto;
   }
   
   .client-image {
@@ -57,11 +56,11 @@
     height: 60px;
     border-radius: 50%;
     margin-right: 20px;
-    object-fit: cover; /* Ensure image covers the circle */
+    object-fit: cover; 
   }
   
   .client-details {
-    text-align: left; /* Align text to the left */
+    text-align: left;
   }
   
   .client-name {
@@ -71,23 +70,23 @@
     margin: 0;
   }
   
-  /* react-slick overrides (customize as needed) */
+
   .slick-dots li button:before {
-    font-size: 10px; /* Adjust dot size */
-    color: #007bff; /* Primary color for active dots */
-    opacity: 0.5; /* Slightly transparent for inactive dots */
+    font-size: 10px; 
+    color: #007bff; 
+    opacity: 0.5; 
   }
   
   .slick-dots li.slick-active button:before {
-    opacity: 1; /* Fully opaque for active dot */
+    opacity: 1; 
   }
   
   .slick-prev:before, .slick-next:before {
-      font-size: 30px; /* Adjust the size of the arrows */
-      color: #007bff !important; /* Adjust the color of the arrows */
+      font-size: 30px; 
+      color: #007bff !important; 
   }
   
-  /* Responsive adjustments (example) */
+  
   @media (max-width: 768px) {
     .testimonial-card {
       padding: 30px;

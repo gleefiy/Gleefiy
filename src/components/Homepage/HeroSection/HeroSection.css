@@ -1,10 +1,10 @@
-/* Base Styles */
+
 .hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    height: 100vh; 
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
     color: white;
     text-align: center;
     padding: 20px;
@@ -21,14 +21,14 @@
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.2;
-    animation: fadeInUp 1s ease-out; /* Animation for title */
+    animation: fadeInUp 1s ease-out; 
   }
   
   .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 30px;
     line-height: 1.5;
-    animation: fadeInUp 1.5s ease-out; /* Animation for subtitle */
+    animation: fadeInUp 1.5s ease-out; 
   }
   
   .hero-cta {
@@ -41,15 +41,15 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    animation: fadeInUp 2s ease-out; /* Animation for CTA */
+    animation: fadeInUp 2s ease-out; 
   }
   
   .hero-cta:hover {
     background: #f0f0f0;
-    transform: translateY(-5px); /* Hover effect */
+    transform: translateY(-5px); 
   }
   
-  /* Keyframes for animations */
+  
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -64,34 +64,34 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .hero-title {
-      font-size: 2.5rem; /* Smaller font size for tablets */
+      font-size: 2.5rem; 
     }
   
     .hero-subtitle {
-      font-size: 1.25rem; /* Smaller font size for tablets */
+      font-size: 1.25rem; 
     }
   
     .hero-cta {
-      font-size: 1rem; /* Smaller font size for tablets */
+      font-size: 1rem; 
       padding: 12px 25px;
     }
   }
   
   @media (max-width: 480px) {
     .hero-title {
-      font-size: 2rem; /* Smaller font size for mobile */
+      font-size: 2rem; 
     }
   
     .hero-subtitle {
-      font-size: 1rem; /* Smaller font size for mobile */
+      font-size: 1rem; 
     }
   
     .hero-cta {
-      font-size: 0.9rem; /* Smaller font size for mobile */
+      font-size: 0.9rem; 
       padding: 10px 20px;
     }
   
     .hero-container {
-      height: 80vh; /* Adjust height for mobile */
+      height: 80vh; 
     }
   }

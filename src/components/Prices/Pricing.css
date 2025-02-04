@@ -1,7 +1,7 @@
-/* Pricing.css */
+
 .pricing-section {
     padding: 80px 0;
-    background-color: #f8f9fa; /* Light background */
+    background-color: #f8f9fa; 
   }
   
   .container {
@@ -36,7 +36,7 @@
   
   .pricing-category {
     margin-bottom: 60px;
-    width: 100%; /* Make categories take full width */
+    width: 100%; 
   }
   
   .pricing-category-title {
@@ -59,7 +59,7 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 30px;
   }
   
@@ -71,12 +71,12 @@
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
-    min-height: 200px; /* Ensure consistent card height */
-    align-items: flex-start; /* Align items to the top */
+    min-height: 200px; 
+    align-items: flex-start; 
   }
   
   .pricing-item-details {
-      flex-grow: 1; /* Allow details to expand */
+      flex-grow: 1; 
   }
   
   .pricing-item h3 {
@@ -94,8 +94,8 @@
   .pricing-item-price {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #007bff; /* Primary color */
-    margin-top: auto; /* Push price to the bottom */
+    color: #007bff;
+    margin-top: auto; 
   }
   
   .pricing-cta {
@@ -109,8 +109,8 @@
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-align: center; /* Center the button text */
-    margin-top: 20px; /* Add some space above the button */
+    text-align: center; 
+    margin-top: 20px; 
   }
   
   .pricing-cta:hover {
@@ -123,13 +123,13 @@
       font-size: 1rem;
       color: #555;
       text-align: center;
-      margin-top: 20px; /* Space above discount text */
+      margin-top: 20px; 
   }
   
   .custom-pricing-content {
-      text-align: left; /* Align text to the left */
-      max-width: 700px;  /* Limit width for better readability */
-      margin: 0 auto;    /* Center the content */
+      text-align: left; 
+      max-width: 700px; 
+      margin: 0 auto;   
   }
   
   .custom-pricing-content p {
@@ -153,17 +153,17 @@
       margin-bottom: 10px;
       color: #666;
       line-height: 1.6;
-      position: relative; /* For the bullet point */
-      padding-left: 25px; /* Space for the bullet point */
+      position: relative;
+      padding-left: 25px;
   }
   
   .custom-pricing-steps li::before, .custom-pricing-examples li::before {
-      content: '\2022';  /* Unicode bullet character */
+      content: '\2022';  
       position: absolute;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      color: #007bff; /* Primary color */
+      color: #007bff; 
   }
   
   .final-cta {
@@ -179,11 +179,11 @@
   
   .final-cta-buttons {
       display: flex;
-      justify-content: center; /* Center the buttons */
-      gap: 20px; /* Add some space between buttons */
+      justify-content: center; 
+      gap: 20px; 
   }
   
-  /* Responsive Design */
+ 
   @media (max-width: 992px) {
       .pricing-headline {
           font-size: 2.2rem;
@@ -196,7 +196,7 @@
   
       .pricing-item {
           padding: 25px;
-          min-height: auto; /* Adjust card height for medium screens */
+          min-height: auto; 
       }
   
       .pricing-item h3 {
@@ -214,7 +214,7 @@
       }
   
       .pricing-list {
-          grid-template-columns: 1fr; /* Single column */
+          grid-template-columns: 1fr; 
           gap: 20px;
       }
   

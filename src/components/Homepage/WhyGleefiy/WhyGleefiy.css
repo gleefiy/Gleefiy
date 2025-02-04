@@ -1,7 +1,7 @@
-/* WhyGleefiy.css */
+
 .why-gleefiy {
-    padding: 80px 0; /* Consistent padding with other sections */
-    background-color: #fff; /* White background */
+    padding: 80px 0; 
+    background-color: #fff; 
   }
   
   .container {
@@ -14,28 +14,28 @@
     text-align: center;
     margin-bottom: 60px;
     color: #333;
-    font-size: 2.5rem; /* Consistent heading size */
+    font-size: 2.5rem; 
     font-weight: 600;
   }
   
   .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 40px;
   }
   
   .reason-card {
-    background-color: #f8f9fa; /* Light background for cards */
+    background-color: #f8f9fa; 
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   }
   
-  .reason-card i { /* Icon styles */
-    font-size: 3rem; /* Large icons */
-    color: #007bff; /* Primary color */
+  .reason-card i { 
+    font-size: 3rem; 
+    color: #007bff; 
     margin-bottom: 20px;
   }
   
@@ -53,13 +53,13 @@
   }
   
   .reason-card:hover {
-    transform: translateY(-5px); /* Lift up on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
   }
   
-  /* Responsive adjustments (example) */
+ 
   @media (max-width: 768px) {
     .reasons-grid {
-      grid-template-columns: 1fr; /* Single column on smaller screens */
+      grid-template-columns: 1fr; 
     }
   }

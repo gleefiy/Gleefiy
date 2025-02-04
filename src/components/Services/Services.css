@@ -52,7 +52,7 @@
   /* .service-icon { /* No need for extra styling if using Font Awesome */
   
   
-   */
+   
   .service-title {
     font-size: 1.8rem;
     font-weight: 500;
@@ -70,9 +70,9 @@
   }
   
   .service-content {
-    flex-grow: 1; /* Allow content to expand and fill available space */
+    flex-grow: 1;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
   }
   
   .service-problems,
@@ -103,27 +103,27 @@
     margin-bottom: 8px;
     color: #666;
     line-height: 1.6;
-    position: relative; /* For checkmark */
-    padding-left: 25px; /* Space for checkmark */
+    position: relative; 
+    padding-left: 25px; 
   
   }
   
   .service-problems li::before,
   .service-solutions li::before,
   .service-why-it-works li::before {
-    content: '\2713'; /* Checkmark character */
+    content: '\2713';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #007bff; /* Primary color */
+    color: #007bff;
   }
   
   .cta-section {
     text-align: center;
-    padding: 60px 0; /* Consistent padding */
-    background-color: #007bff; /* Primary color background */
-    color: #fff; /* White text */
+    padding: 60px 0; 
+    background-color: #007bff;
+    color: #fff;
   }
   
   .cta-section p {
@@ -137,30 +137,30 @@
     padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #007bff; /* Primary color text */
-    background-color: #fff; /* White background */
+    color: #007bff;
+    background-color: #fff; 
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Button shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
   }
   
   .cta-button:hover {
-    background-color: #f0f0f0; /* Slightly darker background on hover */
-    color: #0056b3; /* Darker primary color on hover */
+    background-color: #f0f0f0; 
+    color: #0056b3; 
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   
-  /* Responsive Design */
-  @media (max-width: 992px) { /* Adjust breakpoint as needed */
+  
+  @media (max-width: 992px) { 
       .services-headline {
           font-size: 2.2rem;
       }
   
       .service-card {
-          min-height: auto; /* Allow card height to adjust on medium screens */
+          min-height: auto; 
       }
   }
   
@@ -170,7 +170,7 @@
     }
   
     .services-grid {
-      grid-template-columns: 1fr; /* Single column */
+      grid-template-columns: 1fr; 
     }
   
     .service-card {
@@ -213,7 +213,7 @@
     }
   }
   
-  @media (max-width: 576px) { /* Further adjustments for smaller screens */
+  @media (max-width: 576px) { 
       .services-headline {
           font-size: 1.7rem;
       }

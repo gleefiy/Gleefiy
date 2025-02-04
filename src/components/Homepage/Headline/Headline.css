@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .headline-container {
     text-align: center;
     padding: 20px;
@@ -23,27 +23,27 @@
     line-height: 1.5;
   }
   
-  /* Responsive Styles */
+
   @media (max-width: 768px) {
     .headline-title {
-      font-size: 2rem; /* Smaller font size for tablets */
+      font-size: 2rem; 
     }
   
     .headline-subtitle {
-      font-size: 1.1rem; /* Smaller font size for tablets */
+      font-size: 1.1rem; 
     }
   }
   
   @media (max-width: 480px) {
     .headline-title {
-      font-size: 1.75rem; /* Smaller font size for mobile */
+      font-size: 1.75rem; 
     }
   
     .headline-subtitle {
-      font-size: 1rem; /* Smaller font size for mobile */
+      font-size: 1rem; 
     }
   
     .headline-container {
-      padding: 15px; /* Reduce padding for smaller screens */
+      padding: 15px; 
     }
   }
