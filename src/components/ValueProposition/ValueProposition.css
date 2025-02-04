@@ -1,0 +1,132 @@
+/* ValueProposition.css */
+
+.value-proposition {
+    padding: 80px 0;  /* Consistent padding */
+    background-color: #fff; /* White background */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .value-content {
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center horizontally */
+  }
+  
+  .value-headline {
+    font-size: 2.8rem; /* Adjust as needed */
+    font-weight: 600;
+    color: #333;
+    text-align: center; /* Center the headline */
+    margin-bottom: 60px; /* Space below headline */
+    line-height: 1.3;
+  }
+  
+  .benefits-section {
+      width: 100%; /* Make benefits section take full width */
+      max-width: 900px; /* Set a maximum width for the benefits section */
+      margin: 0 auto; /* Center the benefits section */
+      margin-bottom: 60px;
+  }
+  
+  .benefits-section h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for benefits */
+    gap: 40px;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: flex-start; /* Align items to the top of the container */
+  }
+  
+  .benefit-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #e0f2f7; /* Light blue background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px; /* Space between icon and details */
+      color: #007bff; /* Primary color for icon */
+      font-size: 2rem;
+  }
+  
+  
+  .benefit-details h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-details p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .cta-section {
+    text-align: center; /* Center the CTA content */
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments (example) */
+  @media (max-width: 768px) {
+    .value-headline {
+      font-size: 2.5rem;
+    }
+  
+    .benefits-list {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  
+    .benefit-item {
+      flex-direction: column; /* Stack icon and details vertically */
+      text-align: center; /* Center content */
+      align-items: center; /* Center horizontally */
+    }
+  
+    .benefit-icon {
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 20px; /* Add space below the icon */
+    }
+  }

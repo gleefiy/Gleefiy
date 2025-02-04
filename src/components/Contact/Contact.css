@@ -1,0 +1,228 @@
+/* Contact.css */
+.contact-page {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-headline {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.3;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    gap: 40px; /* Space between form and details */
+  }
+  
+  .contact-form {
+    flex: 1 1 45%; /* Form takes about 45% of the width */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out; /* Smooth border color transition */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Add a subtle shadow on focus */
+  }
+  
+  .contact-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .contact-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slightly lift up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .contact-details {
+    flex: 1 1 45%; /* Details take about 45% of the width */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-details h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .contact-info a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+  }
+  
+  .contact-info a:hover {
+    color: #007bff; /* Highlight link on hover */
+  }
+  
+  .contact-social {
+    text-align: center;
+  }
+  
+  .contact-social h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    color: #007bff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth transitions */
+  }
+  
+  .social-links a:hover {
+    color: #0056b3;
+    transform: scale(1.1); /* Slightly scale up on hover */
+  }
+  
+  .contact-cta {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .contact-cta p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+  }
+  
+  .contact-cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slightly lift up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column; /* Stack form and details vertically */
+    }
+  
+    .contact-form,
+    .contact-details {
+      flex: 1 1 100%; /* Take full width on smaller screens */
+      margin-bottom: 30px; /* Add space between form and details */
+    }
+  
+      .contact-headline {
+          font-size: 2.2rem;
+      }
+  
+      .contact-cta p {
+          font-size: 1.2rem;
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .contact-headline {
+          font-size: 2rem;
+      }
+  
+      .contact-cta p {
+          font-size: 1.1rem;
+      }
+  
+      .contact-form h3, .contact-details h3 {
+          font-size: 1.4rem;
+      }
+  }

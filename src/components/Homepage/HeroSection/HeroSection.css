@@ -1,0 +1,97 @@
+/* Base Styles */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease-out; /* Animation for title */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    animation: fadeInUp 1.5s ease-out; /* Animation for subtitle */
+  }
+  
+  .hero-cta {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2575fc;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 2s ease-out; /* Animation for CTA */
+  }
+  
+  .hero-cta:hover {
+    background: #f0f0f0;
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem; /* Smaller font size for tablets */
+    }
+  
+    .hero-cta {
+      font-size: 1rem; /* Smaller font size for tablets */
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .hero-cta {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+      padding: 10px 20px;
+    }
+  
+    .hero-container {
+      height: 80vh; /* Adjust height for mobile */
+    }
+  }

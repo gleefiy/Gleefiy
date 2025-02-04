@@ -1,0 +1,249 @@
+/* Services.css */
+.services-page {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .services-headline {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.3;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 40px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    min-height: 400px; /* Ensure consistent height for cards */
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .service-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e0f2f7;
+    margin: 0 auto 30px;
+    color: #007bff;
+    font-size: 2rem;
+  }
+  
+  /* .service-icon { /* No need for extra styling if using Font Awesome */
+  
+  
+   */
+  .service-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .service-subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .service-content {
+    flex-grow: 1; /* Allow content to expand and fill available space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .service-problems,
+  .service-solutions,
+  .service-why-it-works {
+    margin-bottom: 20px;
+  }
+  
+  .service-problems h4,
+  .service-solutions h4,
+  .service-why-it-works h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-problems ul,
+  .service-solutions ul,
+  .service-why-it-works ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-problems li,
+  .service-solutions li,
+  .service-why-it-works li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.6;
+    position: relative; /* For checkmark */
+    padding-left: 25px; /* Space for checkmark */
+  
+  }
+  
+  .service-problems li::before,
+  .service-solutions li::before,
+  .service-why-it-works li::before {
+    content: '\2713'; /* Checkmark character */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff; /* Primary color */
+  }
+  
+  .cta-section {
+    text-align: center;
+    padding: 60px 0; /* Consistent padding */
+    background-color: #007bff; /* Primary color background */
+    color: #fff; /* White text */
+  }
+  
+  .cta-section p {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #007bff; /* Primary color text */
+    background-color: #fff; /* White background */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Button shadow */
+  }
+  
+  .cta-button:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    color: #0056b3; /* Darker primary color on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 992px) { /* Adjust breakpoint as needed */
+      .services-headline {
+          font-size: 2.2rem;
+      }
+  
+      .service-card {
+          min-height: auto; /* Allow card height to adjust on medium screens */
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .services-headline {
+      font-size: 2rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  
+    .service-card {
+      padding: 30px;
+    }
+  
+      .service-icon-container {
+          width: 60px;
+          height: 60px;
+          font-size: 1.8rem;
+      }
+  
+      .service-title {
+          font-size: 1.6rem;
+      }
+  
+      .service-subtitle {
+          font-size: 1.1rem;
+      }
+  
+      .service-problems h4,
+      .service-solutions h4,
+      .service-why-it-works h4 {
+          font-size: 1.1rem;
+      }
+  
+      .service-problems li,
+      .service-solutions li,
+      .service-why-it-works li {
+          font-size: 0.95rem;
+      }
+  
+    .cta-section p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Further adjustments for smaller screens */
+      .services-headline {
+          font-size: 1.7rem;
+      }
+  
+      .service-title {
+          font-size: 1.4rem;
+      }
+  
+      .service-subtitle {
+          font-size: 1rem;
+      }
+  
+      .service-problems h4,
+      .service-solutions h4,
+      .service-why-it-works h4 {
+          font-size: 1rem;
+      }
+  
+      .service-problems li,
+      .service-solutions li,
+      .service-why-it-works li {
+          font-size: 0.9rem;
+      }
+  
+      .cta-section p {
+          font-size: 1.1rem;
+      }
+  
+      .cta-button {
+          font-size: 0.95rem;
+          padding: 10px 20px;
+      }
+  }

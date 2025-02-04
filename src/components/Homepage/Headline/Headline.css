@@ -1,0 +1,49 @@
+/* Base Styles */
+.headline-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .headline-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .headline-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .headline-title {
+      font-size: 2rem; /* Smaller font size for tablets */
+    }
+  
+    .headline-subtitle {
+      font-size: 1.1rem; /* Smaller font size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headline-title {
+      font-size: 1.75rem; /* Smaller font size for mobile */
+    }
+  
+    .headline-subtitle {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .headline-container {
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  }
