@@ -11,10 +11,10 @@ import ValueProposition from './components/ValueProposition/ValueProposition';
 function App() {
   return (
     <div className="App">
-      {/* <HomePage /> */}
+      <HomePage />
       {/* <ValueProposition/> */}
       {/* <Services /> */}
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <CaseStudies /> */}
       {/* <Blog /> */}
       {/* <Contact/> */}
