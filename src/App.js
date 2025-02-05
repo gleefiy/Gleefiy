@@ -8,7 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Pricing from './components/Prices/Pricing';
 import Services from './components/Services/Services';
 import ValueProposition from './components/ValueProposition/ValueProposition';
-import { HashRouter as Router, Route,Routes,Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes,Link } from 'react-router-dom';
 
 
 
@@ -25,7 +25,7 @@ function App() {
       <Router>
       
 
-      <Routes>
+      <Routes basename="/">
       <Route path='/' element={<HomePage/>} />
       <Route path='/services' element={<Services/>} />
       <Route path='/value' element={<ValueProposition/>} />
@@ -33,7 +33,6 @@ function App() {
       <Route path='/case' element={<CaseStudies/>} />
       <Route path='/blog' element={<Blog/>} />
       <Route path='/contact' element={<Contact/>} />
-      <Route path="*" element={<h1>404 Not Found</h1>} />
     
       </Routes>
       </Router>
