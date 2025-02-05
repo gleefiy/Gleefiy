@@ -41,11 +41,11 @@ const Contact = () => {
             <ul className="contact-info">
               <li>
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-                <a href="mailto:info@gleefiy.com">info@gleefiy.com</a> {/* Replace with your email */}
+                <a href={`mailto:${"gleefiyvirtualassistance@gmail.com"}`}>gleefiyvirtualassistance@gmail.com</a> {/* Replace with your email */}
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-                <a href="tel:+15551234567">+1 (555) 123-4567</a> {/* Replace with your phone number */}
+                <a href={`tel:${"+91 92353 77824"}`}>+91 92353 77824</a> {/* Replace with your phone number */}
               </li>
               <li>
                 <FontAwesomeIcon icon={faClock} className="contact-icon" />

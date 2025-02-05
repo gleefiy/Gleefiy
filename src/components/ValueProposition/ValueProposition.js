@@ -1,6 +1,7 @@
 // ValueProposition.jsx
 import React from 'react';
 import './ValueProposition.css';
+import CTASection from '../Homepage/CTAsection/CTASection';
 
 const ValueProposition = () => {
   return (
@@ -43,12 +44,15 @@ const ValueProposition = () => {
             </ul>
           </div>
 
-          <div className="cta-section2"> {/* CTA Section */}
-            <p>Ready to make your vision our mission?</p> {/* Improved CTA text */}
-            <a href="/contact" className="cta-button">Let's Talk</a> {/* Link to contact page */}
-          </div>
+          {/* <div className="cta-section2"> 
+            <p>Ready to make your vision our mission?</p> 
+            <a href="/contact" className="cta-button">Let's Talk</a>
+          </div> */}
         </div>
       </div>
+      <CTASection title="Ready to make your vision our mission?" 
+                    buttonText="Let's Talk!" 
+                    buttonLink="/contact"/>
     </section>
   );
 };
