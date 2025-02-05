@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    background: linear-gradient(135deg, #7700ff, #2575fc); 
     color: white;
     text-align: center;
     padding: 20px;
@@ -12,10 +12,18 @@
   }
   
   .hero-content {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
   }
-  
+
+  .hero-Gleefiy {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease-out; 
+  }
+
   .hero-title {
     font-size: 3rem;
     font-weight: bold;
