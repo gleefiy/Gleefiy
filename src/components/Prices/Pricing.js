@@ -2,6 +2,7 @@
 import React from 'react';
 import './Pricing.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
+import { InViewAnimation } from '../InViewAnimation';
 
 const Pricing = () => {
   const singleServices = [
@@ -18,12 +19,14 @@ const Pricing = () => {
 
   return (
     <section className="pricing-section">
+      
       <div className="container">
         <div className="pricing-content"> {/* Added a wrapper for content */}
           <h1 className="pricing-headline">Pricing Plans Tailored to Your Needs</h1>
           <p className="pricing-intro">At Gleefiy, we understand that every business is unique. That’s why we’ve designed pricing plans that cater to a variety of needs—whether you’re looking for a one-time service, ongoing support, or a fully customized solution. Our focus is on transparency, affordability, and delivering measurable results.</p>
-
+          
           <div className="pricing-category">
+            <InViewAnimation>
             <h2 className="pricing-category-title">Single Service Pricing</h2>
             <p className="pricing-category-subtitle">Affordable, One-Time Services to Get You Started</p>
             <ul className="pricing-list">
@@ -38,9 +41,11 @@ const Pricing = () => {
               ))}
             </ul>
             <a href="/contact" className="pricing-cta">Try a Single Service Today</a>
+            </InViewAnimation>
           </div>
 
           <div className="pricing-category">
+            <InViewAnimation>
             <h2 className="pricing-category-title">Subscription Plans</h2>
             <p className="pricing-category-subtitle">Ongoing Support for Consistent Growth</p>
             <ul className="pricing-list">
@@ -56,9 +61,11 @@ const Pricing = () => {
             </ul>
             <p className="pricing-discount">Save 10% on quarterly payments. Save 20% on annual subscriptions.</p>
             <a href="/contact" className="pricing-cta">Choose Your Plan</a>
+            </InViewAnimation>
           </div>
 
           <div className="pricing-category">
+            <InViewAnimation>
             <h2 className="pricing-category-title">Custom Pricing Plans</h2>
             <p className="pricing-category-subtitle">Tailored Solutions, Built Around Your Vision</p>
             <div className="custom-pricing-content">
@@ -76,6 +83,7 @@ const Pricing = () => {
               </ul>
             </div>
             <a href="/contact" className="pricing-cta">Let’s Build Your Success Story</a>
+            </InViewAnimation>
           </div>
 
           {/* <div className="final-cta"> 
@@ -94,5 +102,7 @@ const Pricing = () => {
     </section>
   );
 };
+
+
 
 export default Pricing;

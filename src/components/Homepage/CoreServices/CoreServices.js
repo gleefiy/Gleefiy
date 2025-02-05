@@ -3,6 +3,7 @@ import React from 'react';
 import './CoreServices.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faUsers, faEnvelope, faSearch, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { InViewAnimation } from '../../InViewAnimation';
 
 const CoreServices = () => {
   const services = [
@@ -71,10 +72,13 @@ const CoreServices = () => {
   return (
     <section className="core-services">
       <div className="container">
-        <h2>What We Do: Build Virtual Brands That Dominate!</h2>
+        <InViewAnimation>
+        <h2 className='core-servicesh2'>What We Do: Build Virtual Brands That Dominate!</h2>
+        </InViewAnimation>
         <div className="services-grid">
           {services.map((service, index) => (
-            <div key={index} className="service-card">
+            <div key={index} className="service-card2">
+              <InViewAnimation>
               <div className="icon-container"> {/* Container for the icon */}
                 <FontAwesomeIcon icon={service.icon} className="service-icon" />
               </div>
@@ -85,9 +89,10 @@ const CoreServices = () => {
                   <li key={i}>{deliverable}</li>
                 ))}
               </ul>
-              <a href={service.ctaLink} className="cta-button">
+              <a href={service.ctaLink} className="cta-button2">
                 {service.ctaText}
               </a>
+              </InViewAnimation>
             </div>
           ))}
         </div>

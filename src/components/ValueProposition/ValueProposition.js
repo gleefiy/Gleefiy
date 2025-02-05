@@ -2,10 +2,13 @@
 import React from 'react';
 import './ValueProposition.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
+import { InViewAnimation } from '../InViewAnimation';
+
 
 const ValueProposition = () => {
   return (
     <section className="value-proposition">
+      <InViewAnimation>
       <div className="container">
         <div className="value-content">
           <h1 className="value-headline">We Don't Support Your Vision, We Make It Our Mission.</h1>
@@ -15,6 +18,7 @@ const ValueProposition = () => {
             <ul className="benefits-list"> {/* Using a list for structured data */}
               <li className="benefit-item">
                 <div className="benefit-icon"><i className="fas fa-rocket"></i></div> {/* Icon placeholder */}
+                
                 <div className="benefit-details">
                   <h3>Efficiency Beyond Limits</h3>
                   <p>Streamline your workflows and maximize productivity with cutting-edge technology that blends human expertise and intelligent systems.</p>
@@ -50,11 +54,14 @@ const ValueProposition = () => {
           </div> */}
         </div>
       </div>
+      </InViewAnimation>
       <CTASection title="Ready to make your vision our mission?" 
                     buttonText="Let's Talk!" 
                     buttonLink="/contact"/>
     </section>
   );
 };
+
+
 
 export default ValueProposition;

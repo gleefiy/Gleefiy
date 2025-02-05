@@ -2,7 +2,7 @@
 import React from 'react';
 import './CaseStudies.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
-
+import { InViewAnimation } from '../InViewAnimation';
 const CaseStudies = () => {
   const caseStudies = [
     {
@@ -34,6 +34,7 @@ const CaseStudies = () => {
 
   return (
     <section className="case-studies">
+      <InViewAnimation>
       <div className="container">
         <h2 className="case-studies-headline">Success Stories: How Businesses Scaled with AI-Powered Assistance</h2>
         <div className="case-studies-grid">
@@ -55,11 +56,14 @@ const CaseStudies = () => {
           ))}
         </div>
       </div>
+      </InViewAnimation>
       <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
               buttonText="Subscribe Now" 
               buttonLink="/pricing"/>
     </section>
   );
 };
+
+
 
 export default CaseStudies;

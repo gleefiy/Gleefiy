@@ -5,8 +5,8 @@ import CoreServices from './CoreServices/CoreServices';
 import WhyChooseGleefiy from './WhyGleefiy/WhyGleefiy';
 import ClientTestimonials from './ClientTestimonials/ClientTestimonials';
 import CTASection from './CTAsection/CTASection';
-import { motion } from 'framer-motion';
-import { useInView } from "react-intersection-observer";
+import { InViewAnimation } from '../InViewAnimation';
+
 
 // import Headline from './Headline';
 
@@ -19,9 +19,9 @@ const HomePage = () => {
         <HeroSection/>
       </InViewAnimation>
 
-      <InViewAnimation>
+      {/* <InViewAnimation> */}
         <CoreServices />
-      </InViewAnimation>
+      {/* </InViewAnimation> */}
       
       <InViewAnimation>
         <WhyChooseGleefiy/>
@@ -34,7 +34,7 @@ const HomePage = () => {
       <InViewAnimation>
         <CTASection title="Ready to Scale Your Business?" 
   buttonText="Book a Free Consultation" 
-  buttonLink="/contact"/>
+  buttonLink="#/contact"/>
       </InViewAnimation>
       
       
@@ -43,19 +43,6 @@ const HomePage = () => {
 };
 
 
-const InViewAnimation = ({children})=>{
-  const { ref, inView} = useInView({triggerOnce: false, threshold: 0.2});
 
-  return(
-    <motion.div
-    ref = {ref}
-    initial = {{ opacity: 0, y: 50}}
-    animate = {inView ? {opacity: 1, y: 0} : {opacity: 0, y: 50}}
-    transition={{duration: 0.8}}
-    >
-      {children}
-    </motion.div>
-  )
-}
 
 export default HomePage;

@@ -25,8 +25,9 @@ function App() {
       <Router>
       
 
-      <Routes basename="/">
-      <Route path='/' element={<HomePage/>} />
+      <Routes>
+      <Route exact path='/' element={<HomePage/>} />
+      <Route path='/Gleefiy' element={<HomePage/>} />
       <Route path='/services' element={<Services/>} />
       <Route path='/value' element={<ValueProposition/>} />
       <Route path='/pricing' element={<Pricing/>} />

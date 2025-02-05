@@ -4,6 +4,9 @@ import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faSearch, faUsers, faEnvelope, faRocket } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import CTASection from '../Homepage/CTAsection/CTASection';
+import { InViewAnimation } from '../InViewAnimation';
+
+
 
 const Services = () => {
   const servicesData = [
@@ -97,11 +100,15 @@ const Services = () => {
   return (
     <section className="services-page">
       <div className="container">
+        <InViewAnimation> 
+        
         <h1 className="services-headline">Your Partner in Growth, Customized Services to Elevate Your Brand</h1>
-
+        </InViewAnimation>
         <div className="services-grid">
+          
           {servicesData.map((service, index) => (
             <div key={index} className="service-card">
+              <InViewAnimation>
               <div className="service-icon-container"> {/* Icon container */}
                 <FontAwesomeIcon icon={service.icon} className="service-icon" />
               </div>
@@ -136,6 +143,7 @@ const Services = () => {
                   </ul>
                 </div>
               </div>
+              </InViewAnimation>
             </div>
           ))}
         </div>
@@ -152,5 +160,7 @@ const Services = () => {
     </section>
   );
 };
+
+
 
 export default Services;

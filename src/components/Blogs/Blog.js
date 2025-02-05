@@ -2,6 +2,7 @@
 import React from 'react';
 import './Blog.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
+import { InViewAnimation } from '../InViewAnimation';
 
 const Blog = () => {
   const blogPosts = [
@@ -29,8 +30,11 @@ const Blog = () => {
 
   return (
     <section className="blog-section">
+      <InViewAnimation>
+
       <div className="container">
         <h2 className="blog-headline">Expert Insights for Scaling Your Business with AI</h2>
+        
         <div className="blog-grid">
           {blogPosts.map((post, index) => (
             <div key={index} className="blog-card">
@@ -48,11 +52,13 @@ const Blog = () => {
           <a href="/subscribe" className="blog-subscribe">Subscribe Now</a> 
         </div> */}
       </div>
+      </InViewAnimation>
        <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
         buttonText="Subscribe Now" 
         buttonLink="/pricing"/>
     </section>
   );
 };
+
 
 export default Blog;
