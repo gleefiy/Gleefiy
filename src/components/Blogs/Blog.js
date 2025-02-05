@@ -1,6 +1,7 @@
 // Blog.jsx
 import React from 'react';
 import './Blog.css';
+import CTASection from '../Homepage/CTAsection/CTASection';
 
 const Blog = () => {
   const blogPosts = [
@@ -42,11 +43,14 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="blog-cta">
+        {/* <div className="blog-cta">
           <p>Subscribe for AI-Driven Insights to Stay Ahead of the Competition!</p>
-          <a href="/subscribe" className="blog-subscribe">Subscribe Now</a> {/* Replace with actual link */}
-        </div>
+          <a href="/subscribe" className="blog-subscribe">Subscribe Now</a> 
+        </div> */}
       </div>
+       <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
+        buttonText="Subscribe Now" 
+        buttonLink="/pricing"/>
     </section>
   );
 };

@@ -7,25 +7,25 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <span className="navbar-logo">Gleefiy</span>
+      <span className="navbar-logo"><a className="linknav" href="/">Gleefiy</a></span>
 
       <ul className={`navbar-menu ${menu ? "active" : ""}`}>
-        <a href="#">
+        <a href="/value">
           <li>Value Proposition</li>
         </a>
-        <a href="#">
+        <a href="/services">
           <li>Services</li>
         </a>
-        <a href="#">
+        <a href="/pricing">
           <li>Pricing</li>
         </a>
-        <a href="#">
+        <a href="/case">
           <li>Case Studies</li>
         </a>
-        <a href="#">
+        <a href="/blog">
           <li>Blog</li>
         </a>
-        <a href="#">
+        <a href="/contact">
           <li>Contact</li>
         </a>
       </ul>

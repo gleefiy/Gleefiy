@@ -43,7 +43,7 @@ const ValueProposition = () => {
             </ul>
           </div>
 
-          <div className="cta-section"> {/* CTA Section */}
+          <div className="cta-section2"> {/* CTA Section */}
             <p>Ready to make your vision our mission?</p> {/* Improved CTA text */}
             <a href="/contact" className="cta-button">Let's Talk</a> {/* Link to contact page */}
           </div>

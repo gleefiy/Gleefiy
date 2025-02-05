@@ -1,6 +1,7 @@
 // Pricing.jsx
 import React from 'react';
 import './Pricing.css';
+import CTASection from '../Homepage/CTAsection/CTASection';
 
 const Pricing = () => {
   const singleServices = [
@@ -77,15 +78,19 @@ const Pricing = () => {
             <a href="/contact" className="pricing-cta">Let’s Build Your Success Story</a>
           </div>
 
-          <div className="final-cta"> {/* Final CTA Section */}
+          {/* <div className="final-cta"> 
             <p>Your Growth Starts Here – Let’s Create a Plan Together!</p>
             <div className="final-cta-buttons">
               <a href="/contact" className="pricing-cta">Book a Free Consultation</a>
-              <a href="/subscriptions" className="pricing-cta">Explore Subscription Plans</a> {/* Example link */}
+              <a href="/pricing" className="pricing-cta">Explore Subscription Plans</a> 
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+       <CTASection title="Your Growth Starts Here – Let’s Create a Plan Together!" 
+        buttonText="Book a Free Consultation" 
+        buttonLink="/contact"/>
+
     </section>
   );
 };

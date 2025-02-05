@@ -3,6 +3,7 @@ import React from 'react';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faSearch, faUsers, faEnvelope, faRocket } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import CTASection from '../Homepage/CTAsection/CTASection';
 
 const Services = () => {
   const servicesData = [
@@ -139,11 +140,15 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="cta-section">
+        {/* <div className="cta-section">
           <p>Boost Your Business with AI-Powered Assistance</p>
           <a href="/contact" className="cta-button">Book a Consultation Today!</a>
-        </div>
+        </div> */}
+
       </div>
+      <CTASection title="Boost Your Business with AI-Powered Assistance" 
+              buttonText="Book a Consultation Today!" 
+              buttonLink="/contact"/>
     </section>
   );
 };

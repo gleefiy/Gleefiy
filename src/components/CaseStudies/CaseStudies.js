@@ -1,6 +1,7 @@
 // CaseStudies.jsx
 import React from 'react';
 import './CaseStudies.css';
+import CTASection from '../Homepage/CTAsection/CTASection';
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -54,6 +55,9 @@ const CaseStudies = () => {
           ))}
         </div>
       </div>
+      <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
+              buttonText="Subscribe Now" 
+              buttonLink="/pricing"/>
     </section>
   );
 };

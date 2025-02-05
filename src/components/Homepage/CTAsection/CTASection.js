@@ -4,7 +4,7 @@ import './CTASection.css';
 
 const CTASection = ({ title, buttonText, buttonLink }) => {
   return (
-    <section className="cta-section">
+    <section className="cta-section1">
       <div className="container">
         <div className="cta-content">
           <h2 className="cta-title">{title}</h2>

@@ -9,6 +9,10 @@
     background-color: #000000;
   }
   
+  .linknav {
+    color: white;
+    text-decoration: none;
+  }
   /* Navbar Logo */
   .navbar-logo {
     font-size: 1.25rem;
