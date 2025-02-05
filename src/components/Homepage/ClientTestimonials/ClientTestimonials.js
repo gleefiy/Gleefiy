@@ -26,6 +26,7 @@ const ClientTestimonials = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerMode: true,             
     autoplay: true, // Optional: Auto-rotate testimonials
     autoplaySpeed: 5000, // Optional: Auto-rotate speed (in milliseconds)
     responsive: [ // Responsive settings

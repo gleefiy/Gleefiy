@@ -1,10 +1,13 @@
 import React from 'react';
 import './HeroSection.css';
+import TextChange from './TextChange';
 
 const HeroSection = () => {
   return (
+
     <div className="hero-container">
       <div className="hero-content">
+        <TextChange/>
         <h1 className="hero-title">High-Impact Content & Growth Solutions</h1>
         <p className="hero-subtitle">
           Designed for Visionaries, Entrepreneurs & Creators. More Results, Less Effort, Maximum Growth.

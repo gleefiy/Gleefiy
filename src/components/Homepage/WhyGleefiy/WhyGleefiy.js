@@ -55,7 +55,7 @@ const WhyChooseGleefiy = () => {
   reason.icon === 'fas fa-comments' ? faComments :
   reason.icon === 'fas fa-headset' ? faHeadset :
   null // Default icon or handle the case where no match is found
-} />
+} style={{ color: '#ffffff' }} />
 <h3>{reason.title}</h3>
               <p>{reason.description}</p>
             </div>
