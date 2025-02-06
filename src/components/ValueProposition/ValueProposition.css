@@ -2,7 +2,7 @@
 
 .value-proposition {
     /* padding: 80px 0;  Consistent padding */
-    background-color: #fff; /* White background */
+    background-color: #000; /* White background */
   }
   
   .container {
@@ -20,7 +20,7 @@
   .value-headline {
     font-size: 2.8rem; /* Adjust as needed */
     font-weight: 600;
-    color: #333;
+    color: #ffffff;
     text-align: center; /* Center the headline */
     margin-bottom: 60px; /* Space below headline */
     line-height: 1.3;
@@ -36,7 +36,7 @@
   .benefits-section h2 {
       font-size: 2rem;
       font-weight: 500;
-      color: #333;
+      color: #ffffff;
       text-align: center;
       margin-bottom: 40px;
   }
@@ -58,7 +58,7 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      background-color: #e0f2f7; /* Light blue background */
+      background: linear-gradient(135deg, #7700ff, #2575fc) ; /* Light blue background */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -71,7 +71,7 @@
   .benefit-details h3 {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 10px;
   }
   
@@ -99,7 +99,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    background-color: #007bff;
+    background-color: #7700ff;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -107,7 +107,8 @@
   }
   
   .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: #7700ff;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }

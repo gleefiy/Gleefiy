@@ -57,6 +57,8 @@ const CaseStudies = () => {
         </div>
       </div>
       </InViewAnimation>
+      <br/>
+      <br/>
       <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
               buttonText="Subscribe Now" 
               buttonLink="/pricing"/>
