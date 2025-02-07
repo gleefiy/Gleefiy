@@ -53,7 +53,7 @@ const Blog = () => {
   //   // ... more blog posts
   // ];
 
-  return (
+  return (<>
     <section className="blog-section">
       <InViewAnimation>
 
@@ -78,10 +78,11 @@ const Blog = () => {
         </div> */}
       </div>
       </InViewAnimation>
-       <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
-        buttonText="Subscribe Now" 
-        buttonLink="/pricing"/>
+       
     </section>
+    <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
+        buttonText="Subscribe Now" 
+        buttonLink="/pricing"/></>
   );
 };
 

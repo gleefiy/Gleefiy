@@ -31,11 +31,11 @@ const HomePage = () => {
         <ClientTestimonials/>
       </InViewAnimation>
 
-      <InViewAnimation>
+      {/* <InViewAnimation> */}
         <CTASection title="Ready to Scale Your Business?" 
   buttonText="Book a Free Consultation" 
   buttonLink="#/contact"/>
-      </InViewAnimation>
+      {/* </InViewAnimation> */}
       
       
     </div>

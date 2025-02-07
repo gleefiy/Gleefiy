@@ -25,7 +25,7 @@
   }
   
   .reason-card {
-    background-color: #7700ff; 
+    background: linear-gradient(90deg, #000a1f, #001f3f, #001f3f);
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,5 +61,13 @@
   @media (max-width: 768px) {
     .reasons-grid {
       grid-template-columns: 1fr; 
+      display: block; /* Ensure visibility */
     }
-  }
+  
+    .reason-card {
+      padding: 30px; /* Adjust for better spacing */
+      margin-bottom: 20px; /* Prevent overlap */
+    }
+}
+  
+  

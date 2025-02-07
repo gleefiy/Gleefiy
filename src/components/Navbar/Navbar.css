@@ -50,7 +50,7 @@
   }
   
   .navbar-menu a:hover {
-    color: #b28bfe;
+    color: #00A8E8;
   }
   
   /* Icons */
@@ -74,6 +74,7 @@
       width: auto;
       gap: 24px;
       padding: 0;
+      top: 0;
     }
   
     .navbar-menu a {

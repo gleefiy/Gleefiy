@@ -94,7 +94,7 @@
   .pricing-item-price {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #7700ff;
+    color: #00A8E8;
     margin-top: auto; 
   }
   
@@ -103,8 +103,8 @@
     padding: 12px 25px;
     font-size: 1rem;
     font-weight: 600;
-    color: #fff;
-    background-color: #7700ff;
+    color: #001f3f;
+    background-color: #00A8E8;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -115,7 +115,7 @@
   
   .pricing-cta:hover {
     background-color: #fff;
-    color: #7700ff;
+    color: #001f3f;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
@@ -164,7 +164,7 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      color: #7700ff; 
+      color: #00A8E8; 
   }
   
   .final-cta {
