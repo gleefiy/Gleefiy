@@ -57,7 +57,7 @@ const WhyChooseGleefiy = () => {
   null // Default icon or handle the case where no match is found
 } style={{ color: '#ffffff' }} />
 <h3>{reason.title}</h3>
-              <p>{reason.description}</p>
+              {/* <p>{reason.description}</p> */}
             </div>
           ))}
         </div>

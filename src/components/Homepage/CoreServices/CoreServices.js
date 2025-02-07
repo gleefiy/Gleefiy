@@ -19,18 +19,18 @@ const CoreServices = () => {
       ctaLink: '/content-creation',
       icon: faPenNib,
     },
-    {
-      title: 'Customer Relationship Management (CRM)',
-      description: 'Turn customers into lifelong advocates with personalized engagement and actionable insights.',
-      deliverables: [
-        'Personalized email campaigns',
-        'Customer journey mapping',
-        'Retention strategies',
-      ],
-      ctaText: 'Learn About CRM',
-      ctaLink: '/crm',
-      icon: faUsers,
-    },
+    // {
+    //   title: 'Customer Relationship Management (CRM)',
+    //   description: 'Turn customers into lifelong advocates with personalized engagement and actionable insights.',
+    //   deliverables: [
+    //     'Personalized email campaigns',
+    //     'Customer journey mapping',
+    //     'Retention strategies',
+    //   ],
+    //   ctaText: 'Learn About CRM',
+    //   ctaLink: '/crm',
+    //   icon: faUsers,
+    // },
     {
       title: 'Email Marketing',
       description: 'Transform emails into a revenue-generating powerhouse with campaigns that connect and convert.',
@@ -73,7 +73,7 @@ const CoreServices = () => {
     <section className="core-services">
       <div className="container">
         <InViewAnimation>
-        <h2 className='core-servicesh2'>What We Do: Build Virtual Brands That Dominate!</h2>
+        <h2 className='core-servicesh2'>What We Do? Build Virtual Brands That Dominate!</h2>
         </InViewAnimation>
         <div className="services-grid">
           {services.map((service, index) => (

@@ -1,12 +1,48 @@
 // Contact.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
+import emailjs from 'emailjs-com';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faClock, faMapMarker } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import brand icons
 
 const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [phone, setPhone] = useState('');
+
+    emailjs.init("DW_1F7xvjXyz9h32f");
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      const serviceId = "service_k3u61fo";
+      const templateId = "template_3eg3ghf";
+      const publicKey = "DW_1F7xvjXyz9h32f";
+
+      const templateParams = {
+          from_name: name + " phone no.: "+phone,
+          from_email: email,
+          to_name: "Gleefiy",
+          message: message,
+      };
+
+      emailjs.send(serviceId, templateId, templateParams, publicKey)
+          .then((response) => {
+              console.log('Email sent successfully!', response);
+              setName('');
+              setEmail('');
+              setMessage('');
+              setPhone('');
+          })
+          .catch((error) => {
+              console.error('Error sending email:', error);
+          });
+  };
+
+
   return (
     <section className="contact-page">
       <div className="container">
@@ -15,22 +51,22 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-form">
             <h3>Send Us a Message</h3>
-            <form action="/submit-form" method="POST"> {/* Replace with your form submission logic */}
+            <form onSubmit={handleSubmit} method="POST"> {/* Replace with your form submission logic */}
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name"   value={name} onChange={(e) => setName(e.target.value)}  required />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email"  value={email} onChange={(e) => setEmail(e.target.value)}  required />
               </div>
               <div className="form-group">
                 <label htmlFor="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" />
+                <input type="tel" id="phone" name="phone"  value={phone} onChange={(e) => setPhone(e.target.value)}/>
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5"  value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
               </div>
               <button type="submit" className="contact-submit">Submit</button>
             </form>
@@ -45,16 +81,10 @@ const Contact = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-                <a href={`tel:${"+91 92353 77824"}`}>+91 92353 77824</a> {/* Replace with your phone number */}
+                <a href={`tel:${"+91 92353 77824"}`}>+91 92353 77824</a><p> , </p><a href={`tel:${"+91 63077 32576"}`}>+91 63077 32576</a>
+                {/* Replace with your phone number */}
               </li>
-              <li>
-                <FontAwesomeIcon icon={faClock} className="contact-icon" />
-                Business Hours: Mon-Fri, 9am-5pm {/* Replace with your business hours */}
-              </li>
-                <li>
-                    <FontAwesomeIcon icon={faMapMarker} className="contact-icon" />
-                    Mumbai, India
-                </li>
+              
             </ul>
 
             <div className="contact-social">

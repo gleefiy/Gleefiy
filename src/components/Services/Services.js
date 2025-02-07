@@ -44,23 +44,23 @@ const Services = () => {
         "SEO generates 15x more clicks than paid search ads.",
       ],
     },
-    {
-      title: "Customer Relationship Management (CRM)",
-      subtitle: "Turn Interactions Into Relationships That Last",
-      icon: faUsers,
-      problems: [
-        "Are you losing valuable leads or struggling with customer retention? We’ll help you build deeper connections and boost loyalty.",
-      ],
-      solutions: [
-        "Chatbots: Deliver real-time, personalized support to your audience.",
-        "Automated Follow-Ups: Ensure no opportunity is missed.",
-        "Data-Driven Insights: Learn what your customers need and refine your approach.",
-      ],
-      whyItWorks: [
-        "Companies with effective CRM systems see a 29% increase in sales.",
-        "89% of businesses compete primarily on customer experience.",
-      ],
-    },
+    // {
+    //   title: "Customer Relationship Management (CRM)",
+    //   subtitle: "Turn Interactions Into Relationships That Last",
+    //   icon: faUsers,
+    //   problems: [
+    //     "Are you losing valuable leads or struggling with customer retention? We’ll help you build deeper connections and boost loyalty.",
+    //   ],
+    //   solutions: [
+    //     "Chatbots: Deliver real-time, personalized support to your audience.",
+    //     "Automated Follow-Ups: Ensure no opportunity is missed.",
+    //     "Data-Driven Insights: Learn what your customers need and refine your approach.",
+    //   ],
+    //   whyItWorks: [
+    //     "Companies with effective CRM systems see a 29% increase in sales.",
+    //     "89% of businesses compete primarily on customer experience.",
+    //   ],
+    // },
     {
       title: "Email Marketing",
       subtitle: "Turn Every Email Into a Revenue Driver",
