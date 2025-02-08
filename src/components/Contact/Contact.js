@@ -81,10 +81,13 @@ const Contact = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-                <a href={`tel:${"+91 92353 77824"}`}>+91 92353 77824</a><p> , </p><a href={`tel:${"+91 63077 32576"}`}>+91 63077 32576</a>
+                <a href={`tel:${"+91 92353 77824"}`}>+91 92353 77824</a>
                 {/* Replace with your phone number */}
               </li>
-              
+              <li>
+                <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+                <a href={`tel:${"+91 63077 32576"}`}>+91 63077 32576</a>
+              </li>
             </ul>
 
             <div className="contact-social">

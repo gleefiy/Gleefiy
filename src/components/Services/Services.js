@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faSearch, faUsers, faEnvelope, faRocket } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import CTASection from '../Homepage/CTAsection/CTASection';
 import { InViewAnimation } from '../InViewAnimation';
-
+import { useState } from 'react';
 
 
 const Services = () => {
@@ -97,70 +97,81 @@ const Services = () => {
     },
   ];
 
+  const [isFlipped, setIsFlipped] = useState(false);
+  
   return (
-    <section className="services-page">
-      <div className="container">
-        <InViewAnimation> 
-        
-        <h1 className="services-headline">Your Partner in Growth, Customized Services to Elevate Your Brand</h1>
-        </InViewAnimation>
-        <div className="services-grid">
+    <>
+      <section className="services-page">
+        <div className="container">
+          <InViewAnimation>
+            <h1 className="services-headline">Your Partner in Growth, Customized Services to Elevate Your Brand</h1>
+          </InViewAnimation>
           
-          {servicesData.map((service, index) => (
-            <div key={index} className="service-card">
-              <InViewAnimation>
-              <div className="service-icon-container"> {/* Icon container */}
-                <FontAwesomeIcon icon={service.icon} className="service-icon" />
+          <div className="service-grid">
+            {servicesData.map((service, index) => (
+              <div key={index}  className={`service-card ${isFlipped ? "flipped" : ""}`}
+              onClick={() => setIsFlipped(!isFlipped)}>
+                <div className="service-card-inner">
+                  {/* Front Side */}
+                  <div className="service-card-front">
+                    <div className="service-icon-container">
+                      <FontAwesomeIcon icon={service.icon} className="service-icon" />
+                    </div>
+                    <h2 className="service-title">{service.title}</h2>
+                    <h3 className="service-subtitle">{service.subtitle}</h3>
+                  </div>
+  
+                  {/* Back Side */}
+                  <div className="service-card-back">
+                    <div className="service-content">
+                      <div className="service-problems">
+                        <h4>What We Solve:</h4>
+                        <ul>
+                          {service.problems.map((problem, i) => (
+                            <li key={i}>{problem}</li>
+                          ))}
+                        </ul>
+                      </div>
+  
+                      <div className="service-solutions">
+                        <h4>Our Solutions:</h4>
+                        <ul>
+                          {service.solutions.map((solution, j) => (
+                            <li key={j}>{solution}</li>
+                          ))}
+                        </ul>
+                      </div>
+  
+                      <div className="service-why-it-works">
+                        <h4>Why It Works:</h4>
+                        <ul>
+                          {service.whyItWorks.map((reason, k) => (
+                            <li key={k}>{reason}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h2 className="service-title">{service.title}</h2>
-              <h3 className="service-subtitle">{service.subtitle}</h3>
-
-              <div className="service-content">
-                <div className="service-problems">
-                  <h4>What We Solve:</h4>
-                  <ul>
-                    {service.problems.map((problem, i) => (
-                      <li key={i}>{problem}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="service-solutions">
-                  <h4>Our Solutions:</h4>
-                  <ul>
-                    {service.solutions.map((solution, j) => (
-                      <li key={j}>{solution}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="service-why-it-works">
-                  <h4>Why It Works:</h4>
-                  <ul>
-                    {service.whyItWorks.map((reason, k) => (
-                      <li key={k}>{reason}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              </InViewAnimation>
-            </div>
-          ))}
+            ))}
+          </div>
+  
+          
         </div>
-
-        {/* <div className="cta-section">
-          <p>Boost Your Business with AI-Powered Assistance</p>
-          <a href="/contact" className="cta-button">Book a Consultation Today!</a>
-        </div> */}
-
-      </div>
-      <br/>
-      <br/>
-      <CTASection title="Boost Your Business with AI-Powered Assistance" 
-              buttonText="Book a Consultation Today!" 
-              buttonLink="/contact" />
-    </section>
-  );
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <CTASection title="Boost Your Business with AI-Powered Assistance" buttonText="Book a Consultation Today!" buttonLink="/contact" />
+  
+      </section>
+        </>
+    );
 };
 
 

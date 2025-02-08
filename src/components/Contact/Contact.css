@@ -36,6 +36,7 @@
   padding: 40px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
+  max-width: 75%;
 }
 
 .contact-form:hover,
@@ -217,4 +218,11 @@
   .contact-details h3 {
       font-size: 1.4rem;
   }
+
+  .contact-details li {
+    font-size: 0.8rem;
+}
+
+
+  
 }
