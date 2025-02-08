@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gleefiy/static/css/main.ad02f082.css",
+    "main.css": "/Gleefiy/static/css/main.5e3fe9cd.css",
     "main.js": "/Gleefiy/static/js/main.6d34a493.js",
     "static/js/488.9c92ff38.chunk.js": "/Gleefiy/static/js/488.9c92ff38.chunk.js",
     "static/media/slick.svg": "/Gleefiy/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -8,12 +8,12 @@
     "static/media/slick.ttf": "/Gleefiy/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Gleefiy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Gleefiy/index.html",
-    "main.ad02f082.css.map": "/Gleefiy/static/css/main.ad02f082.css.map",
+    "main.5e3fe9cd.css.map": "/Gleefiy/static/css/main.5e3fe9cd.css.map",
     "main.6d34a493.js.map": "/Gleefiy/static/js/main.6d34a493.js.map",
     "488.9c92ff38.chunk.js.map": "/Gleefiy/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad02f082.css",
+    "static/css/main.5e3fe9cd.css",
     "static/js/main.6d34a493.js"
   ]
 }
