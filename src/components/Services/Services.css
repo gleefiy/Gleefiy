@@ -28,6 +28,7 @@
 /* Card Flip Effect */
 .service-card {
   perspective: 1000px;
+  max-width: 90%;
 }
 
 .service-card-inner {
