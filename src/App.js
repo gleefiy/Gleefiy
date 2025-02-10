@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Blog from './components/Blogs/Blog';
+import Blogin from './components/Blogs/Blog-in/Blogin';
 import CaseStudies from './components/CaseStudies/CaseStudies';
 import Contact from './components/Contact/Contact';
 import HomePage from './components/Homepage/Homepage';
@@ -36,6 +37,7 @@ function App() {
       <Route path='/blog' element={<Blog/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/test' element={<Test/>} />
+      <Route path='/blog-in/id/:id' element={<Blogin/>} />
     
       </Routes>
       </Router>

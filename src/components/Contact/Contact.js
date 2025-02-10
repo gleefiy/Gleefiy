@@ -12,15 +12,20 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [phone, setPhone] = useState('');
+    const service_key=process.env.REACT_APP_MAIL_SERVICEID;
+    const template_key=process.env.REACT_APP_MAIL_TEMPLATEID;
+    const user_key=process.env.REACT_APP_MAIL_USERID;
 
-    emailjs.init("DW_1F7xvjXyz9h32f");
+    console.log(user_key)
+    emailjs.init(user_key);
 
     const handleSubmit = (e) => {
       e.preventDefault();
-
-      const serviceId = "service_k3u61fo";
-      const templateId = "template_3eg3ghf";
-      const publicKey = "DW_1F7xvjXyz9h32f";
+      
+      // const serviceId = "service_k3u61fo";
+      const serviceId = service_key;
+      const templateId = template_key;
+      const publicKey = user_key;
 
       const templateParams = {
           from_name: name + " phone no.: "+phone,

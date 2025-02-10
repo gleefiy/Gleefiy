@@ -10,6 +10,7 @@ import { database } from '../../firebaseConfig';
 
 const Blog = () => {
   const [user, setUser] = useState([]);
+  const [blid, setBlid] = useState([]);
   
       useEffect(() => {
           const usersref=ref(database,'blog_data');
@@ -21,7 +22,10 @@ const Blog = () => {
                       id,
                       ...data
                   }));
+                  usersArray.sort((a, b) => b.id.localeCompare(a.id)); 
+
                   setUser(usersArray);
+                  // setUser(usersArray);
               }else{
                   console.log('No data available');
               }
@@ -29,6 +33,8 @@ const Blog = () => {
               console.error(error);
           });
       },[])
+
+      console.log(user);
 
   // const blogPosts = [
   //   {
@@ -52,7 +58,7 @@ const Blog = () => {
   //   },
   //   // ... more blog posts
   // ];
-
+     
   return (<>
     <section className="blog-section">
       <InViewAnimation>
@@ -67,7 +73,8 @@ const Blog = () => {
               <div className="blog-card-content">
                 <h3 className="blog-title">{data.title}</h3>
                 <p className="blog-excerpt">{data.excerpt}</p>
-                {/* <a href={post.link} className="blog-read-more">Read More</a> */}
+                {/* <a value={blid} onClick={(e) => setBlid(data.id)} className="blog-read-more">Read More</a> */}
+                <a href={`/blog-in/id/${data.id}`} className="blog-read-more">Read More</a>
               </div>
             </div>
           ))}
