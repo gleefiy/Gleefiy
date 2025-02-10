@@ -21,6 +21,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
+
       
       // const serviceId = "service_k3u61fo";
       const serviceId = service_key;
@@ -36,6 +37,7 @@ const Contact = () => {
 
       emailjs.send(serviceId, templateId, templateParams, publicKey)
           .then((response) => {
+              alert('Email sent successfully!');
               console.log('Email sent successfully!', response);
               setName('');
               setEmail('');
@@ -43,6 +45,7 @@ const Contact = () => {
               setPhone('');
           })
           .catch((error) => {
+              alert('An error occurred, Please try again!');              
               console.error('Error sending email:', error);
           });
   };
