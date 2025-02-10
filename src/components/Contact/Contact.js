@@ -15,6 +15,7 @@ const Contact = () => {
     const service_key=process.env.REACT_APP_MAIL_SERVICEID;
     const template_key=process.env.REACT_APP_MAIL_TEMPLATEID;
     const user_key=process.env.REACT_APP_MAIL_USERID;
+    const template_key2=process.env.REACT_APP_MAIL_TEMPLATEID2;
 
     console.log(user_key)
     emailjs.init(user_key);
@@ -27,9 +28,11 @@ const Contact = () => {
       const serviceId = service_key;
       const templateId = template_key;
       const publicKey = user_key;
+      const templateId2 = "template_p657hny";
 
       const templateParams = {
-          from_name: name + " phone no.: "+phone,
+          from_name: name,
+          from_phone: phone,
           from_email: email,
           to_name: "Gleefiy",
           message: message,
@@ -43,6 +46,21 @@ const Contact = () => {
               setEmail('');
               setMessage('');
               setPhone('');
+          })
+          .catch((error) => {
+              alert('An error occurred, Please try again!');              
+              console.error('Error sending email:', error);
+          });
+
+
+          emailjs.send(serviceId, templateId2, templateParams, publicKey)
+          .then((response) => {
+              // alert('Email sent successfully!');
+              console.log('Email sent successfully2!', response);
+              // setName('');
+              // setEmail('');
+              // setMessage('');
+              // setPhone('');
           })
           .catch((error) => {
               alert('An error occurred, Please try again!');              
