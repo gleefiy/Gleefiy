@@ -28,7 +28,7 @@ const Contact = () => {
       const serviceId = service_key;
       const templateId = template_key;
       const publicKey = user_key;
-      const templateId2 = "template_p657hny";
+      const templateId2 = template_key2;
 
       const templateParams = {
           from_name: name,
