@@ -74,7 +74,7 @@ const Blog = () => {
                 <h3 className="blog-title">{data.title}</h3>
                 <p className="blog-excerpt">{data.excerpt}</p>
                 {/* <a value={blid} onClick={(e) => setBlid(data.id)} className="blog-read-more">Read More</a> */}
-                <a href={`/blog-in/id/${data.id}`} className="blog-read-more">Read More</a>
+                <a href={`#/blog-in/id/${data.id}`} className="blog-read-more">Read More</a>
               </div>
             </div>
           ))}
@@ -89,7 +89,7 @@ const Blog = () => {
     </section>
     <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
         buttonText="Subscribe Now" 
-        buttonLink="/pricing"/></>
+        buttonLink="#/pricing"/></>
   );
 };
 

@@ -34,7 +34,7 @@ const HomePage = () => {
       {/* <InViewAnimation> */}
         <CTASection title="Ready to Scale Your Business?" 
   buttonText="Book a Free Consultation" 
-  buttonLink="/contact"/>
+  buttonLink="#/contact"/>
       {/* </InViewAnimation> */}
       
       

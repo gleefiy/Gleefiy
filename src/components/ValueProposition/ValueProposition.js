@@ -57,7 +57,7 @@ const ValueProposition = () => {
       </InViewAnimation>
       <CTASection title="Ready to make your vision our mission?" 
                     buttonText="Let's Talk!" 
-                    buttonLink="/contact"/>
+                    buttonLink="#/contact"/>
     </section>
   );
 };

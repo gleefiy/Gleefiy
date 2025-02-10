@@ -7,11 +7,11 @@ import {  getDatabase} from "firebase/database"
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA82-y_eNnf59hVJeK2Zr-z-2blIMjYmbo",
-  authDomain: "gleefee-ce510.firebaseapp.com",
-  projectId: "gleefee-ce510",
-  databaseURL: "https://gleefee-ce510-default-rtdb.firebaseio.com/",
-  storageBucket: "gleefee-ce510.firebasestorage.app",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: "957560780932",
   appId: "1:957560780932:web:ea15556c886b9a5516aad1",
   measurementId: "G-XTZC5QWEGZ"

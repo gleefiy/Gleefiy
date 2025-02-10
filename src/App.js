@@ -10,7 +10,7 @@ import Pricing from './components/Prices/Pricing';
 import Services from './components/Services/Services';
 import Test from './components/Test';
 import ValueProposition from './components/ValueProposition/ValueProposition';
-import { BrowserRouter as Router, Route,Routes,Link } from 'react-router-dom';
+import { HashRouter as Router, Route,Routes,Link } from 'react-router-dom';
 
 
 

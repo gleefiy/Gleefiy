@@ -116,7 +116,7 @@ const Contact = () => {
 
         <div className="contact-cta">
           <p>Let’s Take Your Business to the Next Level – Contact Us Today!</p>
-          <a href="/contact" className="contact-cta-button">Contact Us</a> {/* Could link to the form section */}
+          <a href="#/contact" className="contact-cta-button">Contact Us</a> {/* Could link to the form section */}
         </div>
       </div>
     </section>

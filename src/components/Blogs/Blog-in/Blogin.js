@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import {get,ref} from 'firebase/database';
 import { database } from '../../../firebaseConfig';
 import "./Blogin.css";
+import CTASection from '../../Homepage/CTAsection/CTASection';
 
 const Blogin = () => {
    
@@ -47,6 +48,10 @@ const Blogin = () => {
       ) : (
         <p>Blog not found</p>
       )}
+        <CTASection title="Subscribe for AI-Driven Insights to Stay Ahead of the Competition!" 
+                buttonText="Subscribe Now" 
+                buttonLink="#/pricing"/>
+
     </div>
   )
 }

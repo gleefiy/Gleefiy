@@ -97,7 +97,7 @@ const Pricing = () => {
       </div>
        <CTASection title="Your Growth Starts Here – Let’s Create a Plan Together!" 
         buttonText="Book a Free Consultation" 
-        buttonLink="/contact"/>
+        buttonLink="#/contact"/>
 
     </section>
   );

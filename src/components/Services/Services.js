@@ -167,7 +167,7 @@ const Services = () => {
         <br/>
         <br/>
         <br/>
-        <CTASection title="Boost Your Business with AI-Powered Assistance" buttonText="Book a Consultation Today!" buttonLink="/contact" />
+        <CTASection title="Boost Your Business with AI-Powered Assistance" buttonText="Book a Consultation Today!" buttonLink="#/contact" />
   
       </section>
         </>

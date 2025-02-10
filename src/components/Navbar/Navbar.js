@@ -7,25 +7,25 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <span className="navbar-logo"><a className="linknav" href="/">Gleefiy</a></span>
+      <span className="navbar-logo"><a className="linknav" href="#/">Gleefiy</a></span>
 
       <ul className={`navbar-menu ${menu ? "active" : ""}`}>
-        <a href="/value">
+        <a href="#/value">
           <li>Value Proposition</li>
         </a>
-        <a href="/services">
+        <a href="#/services">
           <li>Services</li>
         </a>
-        <a href="/pricing">
+        <a href="#/pricing">
           <li>Pricing</li>
         </a>
-        <a href="/case">
+        <a href="#/case">
           <li>Success stories</li>
         </a>
-        <a href="/blog">
+        <a href="#/blog">
           <li>Blog</li>
         </a>
-        <a href="/contact">
+        <a href="#/contact">
           <li>Contact</li>
         </a>
       </ul>
