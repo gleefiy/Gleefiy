@@ -34,7 +34,7 @@ const Blog = () => {
           });
       },[])
 
-      console.log(user);
+      // console.log(user);
 
   // const blogPosts = [
   //   {

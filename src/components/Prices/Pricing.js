@@ -3,19 +3,27 @@ import React from 'react';
 import './Pricing.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
 import { InViewAnimation } from '../InViewAnimation';
+import { useNavigate } from 'react-router-dom';
 
 const Pricing = () => {
   const singleServices = [
-    { name: "Content Creation Services", price: "₹5,000", description: "e.g., blogs, reels, or social media posts" },
-    { name: "SEO Audit & Optimization", price: "₹7,500", description: "Comprehensive report and actionable fixes" },
-    { name: "Email Campaign Setup", price: "₹6,000", description: "Design, copy, and segmentation for one campaign" },
+    { name: "Content Creation Services", price: "₹5,000",priceint:5000, description: "e.g., blogs, reels, or social media posts" },
+    { name: "SEO Audit & Optimization", price: "₹7,500",priceint:7500, description: "Comprehensive report and actionable fixes" },
+    { name: "Email Campaign Setup", price: "₹6,000",priceint:6000, description: "Design, copy, and segmentation for one campaign" },
   ];
 
   const subscriptionPlans = [
-    { name: "Starter Plan", price: "₹15,000", description: "Content creation, email marketing, and basic SEO" },
-    { name: "Growth Plan", price: "₹30,000", description: "More content and advanced SEO" },
-    { name: "Premium Plan", price: "₹50,000", description: "Unlimited content and advanced SEO" },
+    { name: "Starter Plan", price: "₹15,000",priceint:15000, description: "Content creation, email marketing, and basic SEO" },
+    { name: "Growth Plan", price: "₹30,000",priceint:30000, description: "More content and advanced SEO" },
+    { name: "Premium Plan", price: "₹50,000",priceint:50000, description: "Unlimited content and advanced SEO" },
   ];
+  const navigate = useNavigate();
+  const passData = (service) => {
+    
+    navigate('/buyin',{state:{price:service.priceint,service_name:service.name}});
+    alert("You are being redirected to the payment page");
+  }
+
 
   return (
     <section className="pricing-section">
@@ -37,6 +45,7 @@ const Pricing = () => {
                     <p>{service.description}</p>
                   </div>
                   <span className="pricing-item-price">Starting at {service.price}</span>
+                  {/* <button onClick={() => passData(service)} className="pricing-cta">Buy Now</button> */}
                 </li>
               ))}
             </ul>

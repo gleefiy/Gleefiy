@@ -6,6 +6,7 @@ import CaseStudies from './components/CaseStudies/CaseStudies';
 import Contact from './components/Contact/Contact';
 import HomePage from './components/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
+import Buyin from './components/Prices/Buyin/Buyin';
 import Pricing from './components/Prices/Pricing';
 import Services from './components/Services/Services';
 import Test from './components/Test';
@@ -38,6 +39,7 @@ function App() {
       <Route path='/contact' element={<Contact/>} />
       <Route path='/test' element={<Test/>} />
       <Route path='/blog-in/id/:id' element={<Blogin/>} />
+      <Route path='/buyin' element={<Buyin/>} />
     
       </Routes>
       </Router>
