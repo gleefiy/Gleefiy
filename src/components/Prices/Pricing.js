@@ -1,11 +1,16 @@
 // Pricing.jsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Pricing.css';
 import CTASection from '../Homepage/CTAsection/CTASection';
 import { InViewAnimation } from '../InViewAnimation';
 import { useNavigate } from 'react-router-dom';
+import { push, ref, query, orderByChild, equalTo, get } from 'firebase/database';
+import { database } from '../../firebaseConfig'; // Import your Firebase database instance
+
 
 const Pricing = () => {
+
+  const [key, setKey] = useState("");
   const singleServices = [
     { name: "Content Creation Services", price: "₹5,000",priceint:5000, description: "e.g., blogs, reels, or social media posts" },
     { name: "SEO Audit & Optimization", price: "₹7,500",priceint:7500, description: "Comprehensive report and actionable fixes" },
@@ -20,10 +25,31 @@ const Pricing = () => {
   const navigate = useNavigate();
   const passData = (service) => {
     
-    navigate('/buyin',{state:{price:service.priceint,service_name:service.name}});
+    navigate('/buyin',{state:{price:service.priceint,service_name:service.name,key:key.key}});
     alert("You are being redirected to the payment page");
   }
 
+  useEffect(() => {
+    
+    const fetchBlog = async () => {
+      try {
+        const blogRef = ref(database, `razorpay_creds/1`); // Fetch only this blog ID
+        const snapshot = await get(blogRef);
+
+        if (snapshot.exists()) {
+          setKey(snapshot.val()); // Store the blog data in state
+        } else {
+          console.log("No data available");
+        }
+      } catch (error) {
+        console.error("Error fetching blog:", error);
+      }
+    };
+
+    fetchBlog();
+  }, []);
+
+    // console.log(key.key);
 
   return (
     <section className="pricing-section">
@@ -45,7 +71,7 @@ const Pricing = () => {
                     <p>{service.description}</p>
                   </div>
                   <span className="pricing-item-price">Starting at {service.price}</span>
-                  {/* <button onClick={() => passData(service)} className="pricing-cta">Buy Now</button> */}
+                  <button onClick={() => passData(service)} className="pricing-cta">Buy Now</button>
                 </li>
               ))}
             </ul>
